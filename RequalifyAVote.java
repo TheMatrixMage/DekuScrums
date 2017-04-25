@@ -15,7 +15,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextArea;
 import java.awt.Color;
 
-public class DisqualifyVote extends JFrame {
+public class RequalifyAVote extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textFieldID;
@@ -24,11 +24,11 @@ public class DisqualifyVote extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public DisqualifyVote() {
+	public RequalifyAVote() {
 		setResizable(false);
 		setFont(new Font("Arial", Font.PLAIN, 18));
 		setIconImage(Toolkit.getDefaultToolkit().getImage(CreateElection.class.getResource("/images/Deku_Link_Artwork.png")));
-		setTitle("Disqualify Vote");
+		setTitle("Requalify Vote");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(50, 50, 250, 265);
 		contentPane = new JPanel();
@@ -37,12 +37,12 @@ public class DisqualifyVote extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBorder(new TitledBorder(null, "Disqualify Vote", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel.setBorder(new TitledBorder(null, "Requalify Vote", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		panel.setBounds(12, 13, 220, 178);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblID = new JLabel("Voter's ID to disqualify:");
+		JLabel lblID = new JLabel("Voter's ID to Requalify:");
 		lblID.setBounds(12, 23, 168, 16);
 		panel.add(lblID);
 		

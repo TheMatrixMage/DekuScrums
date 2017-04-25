@@ -1,0 +1,23 @@
+btnRequalifyAVote.addActionListener(new ActionListener() {
+	public void actionPerformed(ActionEvent e) {
+		RequalifyAVote rv = new RequalifyAVote();
+		rv.setVisible(true);
+		rv.getSubmitButton().addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+			rv.dispose();
+			}
+		});
+	}
+});
+
+btnDisqualifyAVote.addActionListener(new ActionListener() {
+	public void actionPerformed(ActionEvent e) {
+		DisqualifyVote dv = new DisqualifyVote();
+		dv.setVisible(true);
+		dv.getSubmitButton().addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+			dv.dispose();
+			}
+		});
+	}
+});
